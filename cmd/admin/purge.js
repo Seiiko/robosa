@@ -1,8 +1,8 @@
 module.exports.run = async (client, message, args) => {
 
     // Define the role variables.
-    let owner = "★ Nova ★";
-    let admin = "★ Admin ★";
+    let owner = "Robosa";
+    let admin = "Admin";
         
     async function purge() { // Wrap in an async.
 

@@ -1,8 +1,8 @@
 module.exports.run = async (client, message, args) => {
 
     // Define the role variables.
-    let owner = "★ Nova ★";
-    let admin = "★ Admin ★";
+    let owner = "Robosa";
+    let admin = "Admin";
 
     // Limit it to admins.
     if (!message.member.roles.some(r => [owner, admin].includes(r.name))) // If user doesn't have the Bot Owner or Admin role.

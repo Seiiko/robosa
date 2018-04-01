@@ -3,8 +3,8 @@ const fs = require("fs");
 module.exports.run = async (client, message, args) => {
 
   // Define the role variables.
-  let owner = "★ Nova ★";
-  let admin = "★ Admin ★";
+  let owner = "Robosa";
+  let admin = "Admin";
 
   // Define the mutee and muted role variables.
   let mutee = message.guild.member(message.mentions.members.first());
