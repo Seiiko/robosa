@@ -2,6 +2,14 @@ const booru = require('booru');
 
 module.exports.run = async (client, message, args) => {
 
+  // Define the role variables.
+  let owner = "Robosa";
+  let admin = "Admin";  
+
+  // Limit it to admins.
+  if (!message.member.roles.some(r => [owner, admin].includes(r.name))) // If user doesn't have the Bot Owner or Admin role.
+    return message.channel.send(":interrobang:  |  This command doesn't exist!"); // Send a message to the channel.
+
   // Check if channel is NSFW.
   if(message.channel.id !== "430024119971741705")
     return message.channel.send(":no_entry_sign:  |  This is not a NSFW channel!");
@@ -33,6 +41,6 @@ module.exports.run = async (client, message, args) => {
 module.exports.info = {
 
   // Set the command name.
-  name: "hentai"
+  name: "nsfwhelp"
 
 }
