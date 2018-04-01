@@ -1,3 +1,5 @@
+const translate = require('translate');
+
 module.exports.run = async (client, message, args) => {
 
   if (!args)
