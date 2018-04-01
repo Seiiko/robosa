@@ -186,7 +186,7 @@ client.on("guildMemberAdd", member => { // Listener event: user joining the serv
     .setTitle('Check out Sei\'s YouTube channel.')
     .setAuthor('Robosa   |   Help', 'https://cdn.discordapp.com/attachments/404965687015243787/429974163529269248/robosa.png')
   
-    .setColor('#7d4586')
+    .setColor('#B87830')
     .setDescription('For help with a specific command, type \'.help [command]\'.')
 
     .setFooter('Robosa, now a fully working Raposa robot. Made by Sei.', 'https://cdn.discordapp.com/attachments/404965687015243787/429974163529269248/robosa.png')
