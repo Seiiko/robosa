@@ -253,6 +253,8 @@ client.on("message", async message => {
    // Check if the command exists.
    if (cmd)
     cmd.run(client, message, args);
+   else
+    message.channel.send("no_entry_sign  |  That's not a valid command.")
 
 });
 
