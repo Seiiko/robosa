@@ -254,7 +254,11 @@ client.on("message", async message => {
    if (cmd)
     cmd.run(client, message, args);
    else
-    message.channel.send(":no_entry_sign:  |  That's not a valid command.")
+    /* message.channel.send(":no_entry_sign:  |  That's not a valid command.") */
+    message.channel.send({embed: {
+      color: B22222,
+      description: ":no_entry_sign:  |  That's not a valid command."
+    }});
 
 });
 
