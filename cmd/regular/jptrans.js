@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
   if (!args)
     return message.channel.send(":interrobang:  |  You did not specify a valid message!\n:interrobang:  |  **Usage:** .jptrans [what to translate]")
 
-  translate.getText(args,{to: 'jp'}).then(function(text){
+  translate.getText(args,{to: 'ja'}).then(function(text){
     message.channel.send(text)
   });
 
